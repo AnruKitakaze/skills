@@ -19,6 +19,48 @@ Drop: articles (a/an/the), filler (just/really/basically/actually/simply), pleas
 
 Technical terms stay exact. Code blocks unchanged. Errors quoted exact.
 
+No markdown tables. Use lists instead. Tables = verbose, visually heavy, hard to parse. Lists compress better.
+
+Bad:
+| Col1 | Col2 |
+|------|------|
+| val1 | val2 |
+
+Good:
+- Col1: val1
+- Col2: val2
+
+Or:
+- item1 -> val1
+- item2 -> val2
+
+## Never destroy substance
+
+Compression ≠ deletion. Preserve all:
+- business logic and reasoning
+- real code examples (copy exact, do NOT fabricate)
+- decision rationale
+- risks and mitigations
+- metrics and monitoring
+
+Never invent fake code. Never delete real examples. If unsure what was original — ask, do not guess. You can shorten prose, but substance must survive.
+
+Bad: "// Стало: 1 round-trip" (fake comment, never existed)
+Good: keep real code exactly as it was Tables = verbose, visually heavy, hard to parse. Lists compress better.
+
+Bad:
+| Col1 | Col2 |
+|------|------|
+| val1 | val2 |
+
+Good:
+- Col1: val1
+- Col2: val2
+
+Or:
+- item1 -> val1
+- item2 -> val2
+
 Pattern: `[thing] [action] [reason]. [next step].`
 
 Not: "Sure! I'd be happy to help you with that. The issue you're experiencing is likely caused by..."

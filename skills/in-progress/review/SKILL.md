@@ -18,9 +18,9 @@ The issue tracker should have been provided to you — run `/setup-matt-pocock-s
 
 ### 1. Pin the fixed point
 
-Whatever the user said is the fixed point — a commit SHA, branch name, tag, `main`, `HEAD~5`, etc. Don't be opinionated; pass it through. If they didn't specify one, ask: "Review against what — a branch, a commit, or `main`?" Don't proceed until you have it.
+Whatever the user said is the fixed point — a commit SHA, branch name, tag, `main`, `HEAD~5`, etc. Don't be opinionated; pass it through. If they didn't specify one, default to `main` HEAD. Do not ask for a fixed point unless `main` is unavailable or ambiguous. For staged or uncommitted WIP reviews, default to comparing current worktree/index against `main`.
 
-Capture the diff command once: `git diff <fixed-point>...HEAD` (three-dot, so the comparison is against the merge-base). Also note the list of commits via `git log <fixed-point>..HEAD --oneline`.
+Capture the diff command once. For committed branch review use `git diff <fixed-point>...HEAD` (three-dot, merge-base comparison) and note commits via `git log <fixed-point>..HEAD --oneline`. For staged WIP use `git diff --cached <fixed-point>`. For unstaged or mixed WIP use `git diff <fixed-point>` so worktree changes are included.
 
 ### 2. Identify the spec source
 
