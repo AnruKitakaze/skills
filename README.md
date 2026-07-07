@@ -1,4 +1,4 @@
-# Skills For Real Engineers
+# Skills and Agents
 
 Agent skills for daily engineering work - designed to be small, composable, and easy to adapt. Work with any model.
 
