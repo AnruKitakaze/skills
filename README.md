@@ -6,6 +6,8 @@ Agent skills for daily engineering work - designed to be small, composable, and 
 
 Run `/setup-skills` once per repository before using any engineering skill. It configures your issue tracker, triage labels, and domain doc layout.
 
+OpenCode-first agent roles live in [agents](./agents/). Shared workflows, checklists, and knowledge live in [workflows](./workflows/), [checklists](./checklists/), and [knowledge](./knowledge/). Tool-specific integrations live in [adapters](./adapters/).
+
 ## Reference
 
 ### Engineering
@@ -30,4 +32,5 @@ General workflow tools, not code-specific.
 - **[caveman](./skills/productivity/caveman/SKILL.md)** — Ultra-compressed communication mode. Cuts token usage ~75% by dropping filler while keeping full technical accuracy.
 - **[grill-me](./skills/productivity/grill-me/SKILL.md)** — Get relentlessly interviewed about a plan or design until every branch of the decision tree is resolved.
 - **[handoff](./skills/productivity/handoff/SKILL.md)** — Compact the current conversation into a handoff document so another agent can continue the work.
+- **[instruction-maintainer](./skills/productivity/instruction-maintainer/SKILL.md)** — Reflect on agent or skill process failures and propose narrow instruction changes.
 - **[write-a-skill](./skills/productivity/write-a-skill/SKILL.md)** — Create new skills with proper structure, progressive disclosure, and bundled resources.
