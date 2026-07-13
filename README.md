@@ -8,6 +8,17 @@ Run `/setup-skills` once per repository before using any engineering skill. It c
 
 OpenCode-first agent roles live in [agents](./agents/). Shared workflows, checklists, and knowledge live in [workflows](./workflows/), [checklists](./checklists/), and [knowledge](./knowledge/). Tool-specific integrations live in [adapters](./adapters/).
 
+---
+
+### Opencode
+
+Use this to link agents folder for opencode to this repository:
+
+```bash
+rm ~/.config/opencode/agents
+ln -s ~/.agents/.opencode/agents ~/.config/opencode/agents
+```
+
 ## Reference
 
 ### Engineering
